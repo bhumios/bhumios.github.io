@@ -182,48 +182,40 @@
                         <button data-tab-btn class="px-6 py-3 font-medium text-sm border-b-2 border-transparent text-green-100/60 hover:text-white transition-colors">Taskly Operasional</button>
                         <button data-tab-btn class="px-6 py-3 font-medium text-sm border-b-2 border-transparent text-green-100/60 hover:text-white transition-colors">Accounting Agro</button>
                     </div>
-                    <div data-tab-panel class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <h3 class="text-2xl font-bold text-white mb-4">Sensor Tanah, Cuaca &amp; Air Real-Time</h3>
-                            <p class="text-green-100/70 text-lg">
-                                Pantau kelembaban tanah, pH, TDS, suhu, dan curah hujan 24/7 dari dashboard web. Atur ambang batas dan terima peringatan dini via WhatsApp saat kondisi kritis.
-                            </p>
+                    <div data-tab-panel>
+                        <div class="rounded-lg flex items-center justify-center overflow-hidden bg-white/5 border border-white/10 shadow-[0px_2px_4px_0px_rgba(14,30,37,0.12),0px_2px_16px_0px_rgba(14,30,37,0.32)]">
+                            <img src="assets/dashboard-monitoring-iot.png" alt="Sensor Tanah, Cuaca &amp; Air Real-Time" class="w-full h-auto lg:h-[38rem] object-contain" />
                         </div>
-                        <div class="rounded-lg h-80 overflow-hidden bg-white/5 border border-white/10 shadow-2xl">
-                            <img src="assets/dashboard-monitoring-iot.png" alt="Monitoring IoT" class="w-full h-full object-contain" />
+                        <div class="text-center mt-10 max-w-3xl mx-auto">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Sensor Tanah, Cuaca &amp; Air Real-Time</h3>
+                            <p class="text-lg text-green-100/70">Pantau kelembaban tanah, pH, TDS, suhu, dan curah hujan 24/7 dari dashboard web. Atur ambang batas dan terima peringatan dini via WhatsApp saat kondisi kritis. Data tersimpan untuk forecasting dan riset.</p>
                         </div>
                     </div>
-                    <div data-tab-panel class="hidden grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <h3 class="text-2xl font-bold text-white mb-4">Peta Blok, Aset &amp; Irigasi Lahan</h3>
-                            <p class="text-green-100/70 text-lg">
-                                Petakan blok lahan, titik sensor, pompa, tandon, dan jalur irigasi di dashboard web. Kelola aset agroindustri per site dan kendalikan irigasi dari jarak jauh.
-                            </p>
+                    <div data-tab-panel class="hidden">
+                        <div class="rounded-lg flex items-center justify-center overflow-hidden bg-white/5 border border-white/10 shadow-[0px_2px_4px_0px_rgba(14,30,37,0.12),0px_2px_16px_0px_rgba(14,30,37,0.32)]">
+                            <img src="assets/dashboard-site-manager-lahan.png" alt="Peta Blok, Aset &amp; Irigasi Lahan" class="w-full h-auto lg:h-[38rem] object-contain" />
                         </div>
-                        <div class="rounded-lg h-80 overflow-hidden bg-white/5 border border-white/10 shadow-2xl">
-                            <img src="assets/dashboard-site-manager-lahan.png" alt="SiteManager" class="w-full h-full object-contain" />
+                        <div class="text-center mt-10 max-w-3xl mx-auto">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Peta Blok, Aset &amp; Irigasi Lahan</h3>
+                            <p class="text-lg text-green-100/70">Petakan blok lahan, titik sensor, pompa, tandon, dan jalur irigasi di dashboard web. Kelola aset agroindustri per site, jadwalkan perawatan, dan kendalikan irigasi/ventilasi dari jarak jauh.</p>
                         </div>
                     </div>
-                    <div data-tab-panel class="hidden grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <h3 class="text-2xl font-bold text-white mb-4">Tugas Tanam, Rawat &amp; Panen</h3>
-                            <p class="text-green-100/70 text-lg">
-                                Susun rencana tanam hingga panen di Kanban &amp; Gantt pada dashboard web. Tugaskan tim lapangan dan pantau progres harian dengan foto.
-                            </p>
+                    <div data-tab-panel class="hidden">
+                        <div class="rounded-lg flex items-center justify-center overflow-hidden bg-white/5 border border-white/10 shadow-[0px_2px_4px_0px_rgba(14,30,37,0.12),0px_2px_16px_0px_rgba(14,30,37,0.32)]">
+                            <img src="assets/dashboard-taskly-operasional.png" alt="Tugas Tanam, Rawat &amp; Panen" class="w-full h-auto lg:h-[38rem] object-contain" />
                         </div>
-                        <div class="rounded-lg h-80 overflow-hidden bg-white/5 border border-white/10 shadow-2xl">
-                            <img src="assets/dashboard-taskly-operasional.png" alt="Taskly" class="w-full h-full object-contain" />
+                        <div class="text-center mt-10 max-w-3xl mx-auto">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Tugas Tanam, Rawat &amp; Panen</h3>
+                            <p class="text-lg text-green-100/70">Susun rencana tanam hingga panen di Kanban &amp; Gantt pada dashboard web. Tugaskan tim lapangan, pantau progres harian dengan foto, dan pastikan tidak ada blok yang terlewat perawatan.</p>
                         </div>
                     </div>
-                    <div data-tab-panel class="hidden grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <h3 class="text-2xl font-bold text-white mb-4">Biaya Produksi &amp; Hasil per Blok</h3>
-                            <p class="text-green-100/70 text-lg">
-                                Catat biaya pupuk, bibit, tenaga kerja, dan BBM per blok lahan langsung di dashboard web. Bandingkan dengan hasil panen untuk tahu margin tiap petak.
-                            </p>
+                    <div data-tab-panel class="hidden">
+                        <div class="rounded-lg flex items-center justify-center overflow-hidden bg-white/5 border border-white/10 shadow-[0px_2px_4px_0px_rgba(14,30,37,0.12),0px_2px_16px_0px_rgba(14,30,37,0.32)]">
+                            <img src="assets/dashboard-accounting-catat.png" alt="Biaya Produksi &amp; Hasil per Blok" class="w-full h-auto lg:h-[38rem] object-contain" />
                         </div>
-                        <div class="rounded-lg h-80 overflow-hidden bg-white/5 border border-white/10 shadow-2xl">
-                            <img src="assets/dashboard-accounting-catat.png" alt="Accounting" class="w-full h-full object-contain" />
+                        <div class="text-center mt-10 max-w-3xl mx-auto">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Biaya Produksi &amp; Hasil per Blok</h3>
+                            <p class="text-lg text-green-100/70">Catat biaya pupuk, bibit, tenaga kerja, dan BBM per blok lahan langsung di dashboard web. Bandingkan dengan hasil panen untuk tahu margin tiap petak, dengan laporan double-entry yang rapi.</p>
                         </div>
                     </div>
                 </div>
@@ -495,7 +487,14 @@
                     </div>
                     <p class="text-center text-green-100/70 mb-10 max-w-2xl mx-auto">Cerita panen, pelatihan, dan kegiatan komunitas terbaru.</p>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <a href="#contact" class="group glass-card rounded-2xl overflow-hidden block">
+                        <button
+                            type="button"
+                            data-news-item
+                            data-img="assets/bhumios-iot-device-cabe.jpg"
+                            data-date="12 Agu 2026"
+                            data-title="Panen Raya Blok A: Hasil Naik 18% Berkat Irigasi Otomatis"
+                            class="group w-full text-left bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:-translate-y-1"
+                        >
                             <div class="relative h-48 overflow-hidden">
                                 <img
                                     src="assets/bhumios-iot-device-cabe.jpg"
@@ -506,11 +505,18 @@
                                 <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-black/50 text-white backdrop-blur-sm border border-white/20">12 Agu 2026</span>
                             </div>
                             <div class="p-6">
-                                <h4 class="text-lg font-bold text-white leading-snug mb-2">Panen Raya Blok A: Hasil Naik 18% Berkat Irigasi Otomatis</h4>
+                                <h4 class="text-lg font-bold text-white leading-snug mb-2 group-hover:underline underline-offset-4">Panen Raya Blok A: Hasil Naik 18% Berkat Irigasi Otomatis</h4>
                                 <span class="inline-flex items-center text-sm font-semibold gap-2 text-yellow-600">Baca Selengkapnya <i data-lucide="arrow-right" class="h-4 w-4"></i></span>
                             </div>
-                        </a>
-                        <a href="#contact" class="group glass-card rounded-2xl overflow-hidden block">
+                        </button>
+                        <button
+                            type="button"
+                            data-news-item
+                            data-img="assets/bhumios-iot-hardware.jpg"
+                            data-date="28 Jul 2026"
+                            data-title="Pelatihan Smart Farming Angkatan 6 Diikuti 40 Petani Milenial"
+                            class="group w-full text-left bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:-translate-y-1"
+                        >
                             <div class="relative h-48 overflow-hidden">
                                 <img
                                     src="assets/bhumios-iot-hardware.jpg"
@@ -521,11 +527,18 @@
                                 <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-black/50 text-white backdrop-blur-sm border border-white/20">28 Jul 2026</span>
                             </div>
                             <div class="p-6">
-                                <h4 class="text-lg font-bold text-white leading-snug mb-2">Pelatihan Smart Farming Angkatan 6 Diikuti 40 Petani Milenial</h4>
+                                <h4 class="text-lg font-bold text-white leading-snug mb-2 group-hover:underline underline-offset-4">Pelatihan Smart Farming Angkatan 6 Diikuti 40 Petani Milenial</h4>
                                 <span class="inline-flex items-center text-sm font-semibold gap-2 text-yellow-600">Baca Selengkapnya <i data-lucide="arrow-right" class="h-4 w-4"></i></span>
                             </div>
-                        </a>
-                        <a href="#contact" class="group glass-card rounded-2xl overflow-hidden block">
+                        </button>
+                        <button
+                            type="button"
+                            data-news-item
+                            data-img="assets/bhumios-iot-device-tomat.jpg"
+                            data-date="9 Jul 2026"
+                            data-title="1.000 Ha Lahan Baru Terhubung ke Farm Command Center"
+                            class="group w-full text-left bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:-translate-y-1"
+                        >
                             <div class="relative h-48 overflow-hidden">
                                 <img
                                     src="assets/bhumios-iot-device-tomat.jpg"
@@ -536,10 +549,10 @@
                                 <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-black/50 text-white backdrop-blur-sm border border-white/20">9 Jul 2026</span>
                             </div>
                             <div class="p-6">
-                                <h4 class="text-lg font-bold text-white leading-snug mb-2">1.000 Ha Lahan Baru Terhubung ke Farm Command Center</h4>
+                                <h4 class="text-lg font-bold text-white leading-snug mb-2 group-hover:underline underline-offset-4">1.000 Ha Lahan Baru Terhubung ke Farm Command Center</h4>
                                 <span class="inline-flex items-center text-sm font-semibold gap-2 text-yellow-600">Baca Selengkapnya <i data-lucide="arrow-right" class="h-4 w-4"></i></span>
                             </div>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -615,6 +628,33 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Lightbox berita -->
+        <div
+            id="news-lightbox"
+            class="fixed inset-0 z-[100] overflow-y-auto bg-black/90 backdrop-blur-sm hidden"
+            aria-hidden="true"
+        >
+            <div class="min-h-full flex items-center justify-center p-4 sm:p-8">
+                <div class="relative w-full max-w-3xl my-auto">
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl border border-white/10 bg-black">
+                        <img id="news-lightbox-img" src="" alt="" class="w-full max-h-[68vh] object-contain" />
+                        <button
+                            type="button"
+                            id="news-lightbox-close"
+                            class="absolute top-3 right-3 p-2.5 rounded-full bg-black/60 border border-white/20 text-white hover:bg-white/20 transition-all backdrop-blur-sm"
+                            aria-label="Tutup"
+                        >
+                            <i data-lucide="x" class="h-5 w-5"></i>
+                        </button>
+                    </div>
+                    <div class="mt-3 px-4 sm:px-6 py-4 rounded-2xl bg-[#152e20] border border-white/10 text-center">
+                        <span id="news-lightbox-date" class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-white border border-white/20 mb-2"></span>
+                        <h4 id="news-lightbox-title" class="text-lg md:text-2xl font-bold text-white leading-snug"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Floating WhatsApp -->
         <a

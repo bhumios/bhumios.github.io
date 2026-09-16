@@ -180,4 +180,47 @@
             }
         });
     });
+
+    // News lightbox: same behavior as the landing Community popup
+    var lightbox = document.getElementById('news-lightbox');
+    var lightboxImg = document.getElementById('news-lightbox-img');
+    var lightboxDate = document.getElementById('news-lightbox-date');
+    var lightboxTitle = document.getElementById('news-lightbox-title');
+    var lightboxClose = document.getElementById('news-lightbox-close');
+
+    function openLightbox(item) {
+        if (!lightbox) return;
+        lightboxImg.src = item.getAttribute('data-img') || '';
+        lightboxImg.alt = item.getAttribute('data-title') || '';
+        lightboxDate.textContent = item.getAttribute('data-date') || '';
+        lightboxTitle.textContent = item.getAttribute('data-title') || '';
+        lightbox.classList.remove('hidden');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        if (!lightbox) return;
+        lightbox.classList.add('hidden');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('[data-news-item]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            openLightbox(btn);
+        });
+    });
+
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', closeLightbox);
+    }
+    if (lightbox) {
+        lightbox.addEventListener('click', function (e) {
+            if (e.target === lightbox) closeLightbox();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) closeLightbox();
+        });
+    }
 })();
